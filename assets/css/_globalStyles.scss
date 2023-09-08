@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+@mixin globalStyles(){
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+section {
+    width: 100%;
+    padding: 5rem 7%;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h2 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    @media (max-width: 487px) {
+        font-size: 4rem;
+    }
+}
+
+.heading h2 span {
+    color: var(--primary);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.6rem 2.5rem;
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 1.7rem;
+    font-weight: 400;
+    border-radius: 5rem;
+    transition: color 0.3s ease;
+    &:hover {
+        background-color: var(--secondary);
+    }
+}

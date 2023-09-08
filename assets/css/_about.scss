@@ -1,0 +1,153 @@
+/* ===== About section ===== */
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3.5rem;
+}
+
+.about .title {
+    text-align: center;
+    color: var(--primary);
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 1rem 0;
+    @media (max-width: 487px) {
+        font-size: 2.7rem;
+    }
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    @media (max-width: 991px) {
+        gap: 5rem;
+    }
+}
+
+.info-box p {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+
+.info-box p span {
+    color: var(--light-black);
+    font-size: 1.7rem;
+}
+
+.skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.skills-container .box {
+    flex: 1 1 41rem;
+}
+
+.skills-container .box .progress {
+    padding: 1rem 0;
+}
+
+.box .progress h4 {
+    color: var(--primary);
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 487px) {
+        
+    }
+}
+
+.box .progress h4 span {
+    color: var(--secondary);
+}
+
+.box .progress .bar {
+    height: 1.2rem;
+    border: 0.2rem solid var(--primary);
+    border-radius: 5rem;
+    margin-top: 1rem;
+}
+
+.box .progress .bar span {
+    display: block;
+    width: 95%;
+    height: 100%;
+    background-color: var(--primary);
+    border-radius: 5rem;
+}
+
+.box .progress.progress2 .bar span {
+    width: 90%;
+}
+
+.box .progress.progress3 .bar span {
+    width: 80%;
+}
+
+.box .progress.progress4 .bar span {
+    width: 75%;
+}
+.box .progress.progress5 .bar span {
+    width: 85%;
+}
+
+.box .progress.progress6 .bar span {
+    width: 80%;
+}
+
+.box .progress.progress7 .bar span {
+    width: 70%;
+}
+
+.box .progress.progress8 .bar span {
+    width: 65%;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.counter-box {
+    flex: 1 1 20rem;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.counter-box i {
+    color: var(--secondary);
+    font-size: 3rem;
+}
+
+.counter-box h4 {
+    color: var(--primary);
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 1rem 0 0.5rem;
+}
+
+.counter-box p {
+    color: var(--light-black);
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}

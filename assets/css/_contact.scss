@@ -1,0 +1,72 @@
+/* ===== Contact section ===== */
+.contact {
+    background-color: var(--light-bg);
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 4rem;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    @media (max-width: 991px) {
+        .contact-image {
+            display: none;
+        }
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 1.7rem;
+}
+
+.contact-form .input-field {
+    position: relative;
+}
+
+.input-field input,
+.input-field textarea {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    resize: none;
+    margin: 1.5rem 0;
+    border: var(--border);
+    border-radius: 0.5rem;  
+}
+
+.input-field label {
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--light-black);
+    transition: all 0.3s ease;
+}
+
+.input-field input:valid ~ label,
+.input-field input:focus ~ label,
+.input-field textarea:valid ~ label,
+.input-field textarea:focus ~ label {
+    top: -0.6rem;
+    left: 0;
+    color: var(--primary);
+    font-size: 1.3rem;
+}
+
+.contact-form button {
+    width: 180px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}   

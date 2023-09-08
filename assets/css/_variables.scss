@@ -1,0 +1,10 @@
+@mixin variables() {
+    --primary: #881f50;
+    --secondary: #df438c;
+    --black: #000;
+    --white: #fff;
+    --light-black: #666;
+    --light-bg: #eee;
+    --border: 0.2rem solid rgba(0, 0, 0, 0.1);
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,35 @@
+/* ===== Home section ===== */
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../images/home.jpg") no-repeat;
+    background-size: cover;
+    @media (max-width: 991px) {
+        background-position: center;
+    }
+}
+
+.home-content {
+    max-width: 70rem;
+    margin-top: 25rem;
+}
+
+.home-content h1 {
+    color: var(--white);
+    font-size: 6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    @media (max-width: 768px) {
+        font-size: 5rem;
+    }
+    @media (max-width: 487px) {
+        font-size: 3.5rem;
+    }
+}
+
+.home-content h1 span {
+    display: block;
+    font-weight: 400;
+}

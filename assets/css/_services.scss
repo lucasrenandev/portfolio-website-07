@@ -1,0 +1,37 @@
+/* ===== Services section ===== */
+.services {
+    background-color: var(--light-bg);
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, auto));
+    gap: 2.5rem;
+    text-align: center;
+    margin-top: 4rem;
+    @media (max-width: 350px) {
+        grid-template-columns: repeat(auto-fit, minmax(25rem, auto));
+    }
+}
+
+.service-box {
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    background: linear-gradient(59deg, #ff47b233 50%, #fff 50.1%);
+    z-index: 0;
+}
+
+.service-box h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.service-box p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--light-black);
+    margin-bottom: 1.5rem;
+}
